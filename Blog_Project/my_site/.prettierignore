@@ -2,7 +2,5 @@
 build 
 coverage
 
-# Ignore the following files:
-base.html
-index.html
-404.html
+# Ignore all html files:
+*.html

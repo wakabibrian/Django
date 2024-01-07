@@ -1,0 +1,8 @@
+# Ignore artifacts: 
+build 
+coverage
+
+# Ignore the following files:
+challenge.html 
+index.html
+404.html

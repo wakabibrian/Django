@@ -1,6 +1,5 @@
-from typing import Any
-from django.db.models.query import QuerySet
-from django.http import HttpResponse, HttpResponseRedirect
+from reviews.models import Review
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.views import View
 from django.views.generic.base import TemplateView
@@ -30,9 +29,9 @@ class ThankYouView(TemplateView):
 
 
 class ReviewsListView(ListView):
-    template_name = "reviews/reviews_list.html"
+    template_name = "reviews/review_list.html"
     model = Review
-    context_object_name = "reviews"  # Allows you to define the name of the data
+    context_object_name = "reviews"
 
     # def get_queryset(self):
     #     base_query = super().get_queryset()

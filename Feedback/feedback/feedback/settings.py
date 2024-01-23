@@ -123,3 +123,5 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = BASE_DIR/"uploads"
 MEDIA_URL = "/user-media/"
+
+# SESSION_COOKIE_AGE = 120 # a session will servive for 2 minutes and it will be deleted
